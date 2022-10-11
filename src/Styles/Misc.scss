@@ -1,0 +1,47 @@
+@import "./Colors.scss";
+
+.logo{
+    position: fixed;
+    top: 2rem;
+    left: 2rem;
+    width: 9rem;
+    img {
+        width: 100%;
+    }
+}
+
+.franchiseBtn {
+text-decoration: none;
+background-color: $brown;
+color: $yellow;
+position: fixed;
+padding: 0.7rem 0.5rem;
+border: none;
+border-radius: 10px;
+top: 1rem;
+right: 5rem;
+font: 700 14px $text;
+letter-spacing: 2px;
+transform-origin: bottom;
+transition: transform 0.5s;
+
+&:hover {
+    transform: skewX(-10deg);
+}
+}
+
+.scrollBtn {
+    position: absolute;
+    color: $white;
+    font-size: 4rem;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 5%;
+    animation: mouseScrollAnimation 0.5s linear infinite alternate;
+}
+
+@keyframes mouseScrollAnimation {
+    to {
+        transform: translate(-50%,10px) ;
+    }
+}
